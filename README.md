@@ -37,13 +37,6 @@ titanic_api/
   "Age": 25,
   "Fare": 30.5
 }
-```
-
-- `Pclass`: Passenger class (1, 2, or 3)  
-- `Sex`: 0 = male, 1 = female  
-- `Age`: Age in years  
-- `Fare`: Ticket fare
-
 ---
 
 ## 🚀 How to Run with Docker
@@ -78,26 +71,12 @@ You’ll see an interactive Swagger UI to test the `/predict` endpoint.
 
 ---
 
-## 🧪 Test Locally without Docker (optional)
+## 🧪 Test Locally without Docker
 
 ```bash
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
-
----
-
-## 🐳 Push to Docker Hub (optional)
-
-```bash
-docker tag titanic-fastapi yourdockerhubusername/titanic-fastapi
-docker push yourdockerhubusername/titanic-fastapi
-```
-
----
-
-## 📬 Author
-
 **Haris Khan**
 
 ---
