@@ -6,7 +6,7 @@ import numpy as np
 app = FastAPI()
 
 # Load model
-model = joblib.load("titanic_model.pkl")
+model = joblib.load("titanic_model.joblib")
 
 # Input schema with validation
 class Passenger(BaseModel):
